@@ -1,0 +1,19 @@
+.item {
+  opacity: .35;
+}
+
+.item > span {
+  display: none;
+}
+
+.-found {
+  opacity: 1;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 772px;
+}
