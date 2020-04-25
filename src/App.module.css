@@ -17,3 +17,8 @@
   flex-wrap: wrap;
   height: 772px;
 }
+
+button {
+  background: none;
+  border: none;
+}

@@ -2,15 +2,18 @@
 
 import React from 'react';
 import styles from './App.module.css';
-import Fishies from './things/fish.json';
+import { connect } from "react-redux";
 
-function App() {
+function App({ fish }) {
 
+  // @TODO: Add actions for adding/removing fish
+  // @TODO: Move grid into its own component
+  // @TODO: Rehydrate store from localstorage
   function foundIt({ target }) {
     target.classList.toggle(styles['-found']);
   }
 
-  const fishList = Fishies.map(fish =>
+  const fishList = fish.map(fish =>
     <li key={fish.name}
       title={fish.name}>
       <button onClick={foundIt}>
@@ -28,4 +31,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state => ({
+  fish: state.fish
+});
+
+export default connect(
+  mapStateToProps
+)(App);
