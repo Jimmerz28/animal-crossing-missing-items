@@ -3,32 +3,43 @@
 import type { Item } from '../Types';
 import * as React from 'react';
 import styles from './List.module.css';
+import classNames from 'classnames';
 
 type Props = {
   items: Array<Item>,
-  type: string
+  type: string,
+  onFound: Function
 };
+
+const cx = classNames.bind(styles);
 
 export default class List extends React.Component<Props> {
 
-  // @TODO: Add actions for adding/removing fish
   // @TODO: Move grid into its own component
   // @TODO: Rehydrate store from localstorage
   foundIt = (event: SyntheticEvent<HTMLButtonElement>) => {
-    event.currentTarget.classList.toggle(styles['-found']);
+    // event.currentTarget.classList.toggle(styles['-found']);
+    this.props.onFound(event.currentTarget.dataset.itemName, this.props.type);
   }
 
   render() {
 
-    const list = this.props.items.map(item =>
-      <li key={item.name}
+    const list = this.props.items.map(item => {
+      const buttonStyles = cx(styles.item, {
+        [styles['-found']]: item.found
+      });
+
+      return (
+        <li key={item.name}
         title={item.name}>
-        <button className={styles.item}
+        <button className={buttonStyles}
+          data-item-name={item.name}
           onClick={this.foundIt}>
           <img src={item.imageLink} alt={item.name} />
         </button>
       </li>
-    );
+      )
+    });
 
     return (
       <section>

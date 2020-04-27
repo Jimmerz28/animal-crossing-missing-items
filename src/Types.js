@@ -1,6 +1,6 @@
 // @flow
 
-export type Fish = {
+export type FishBased = {
   name: string,
   imageLink: URL,
   price: number,
@@ -21,4 +21,8 @@ export type Fish = {
   dec: boolean
 };
 
-export type Item = Fish;
+export type FishWithFound = FishBased & {
+  found: Boolean
+}
+
+export type Item = FishWithFound;
