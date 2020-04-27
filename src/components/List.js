@@ -4,6 +4,7 @@ import type { Item } from '../Types';
 import * as React from 'react';
 import styles from './List.module.css';
 import classNames from 'classnames';
+import { PERCENT } from '../Constants';
 
 type Props = {
   items: Array<Item>,
@@ -24,6 +25,12 @@ export default class List extends React.Component<Props> {
 
   render() {
 
+    const completed = this.props.items.reduce((accum, curr) => {
+      return accum  + Number(curr.found);
+    }, 0);
+
+    const percentage = (completed / this.props.items.length);
+
     const list = this.props.items.map(item => {
       const buttonStyles = cx(styles.item, {
         [styles['-found']]: item.found
@@ -43,6 +50,8 @@ export default class List extends React.Component<Props> {
 
     return (
       <section>
+        <h1 className={styles.header}>{this.props.type}</h1>
+        <p>Completed: {PERCENT.format(percentage)}</p>
         <ul className={styles.list}>
           {list}
         </ul>
