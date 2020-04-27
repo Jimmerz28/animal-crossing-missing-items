@@ -1,6 +1,15 @@
 import { createStore } from 'redux';
+import { persistReducer, persistStore } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+
 import reducers from './Reducers';
 
-const store = createStore(reducers);
+const persistConfig = {
+  key: 'ac.missing.app',
+  storage
+};
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, reducers);
+
+export const store = createStore(persistedReducer);
+export const persistor = persistStore(store);

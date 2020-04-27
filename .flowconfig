@@ -9,3 +9,6 @@
 [options]
 
 [strict]
+
+[declarations]
+<PROJECT_ROOT>/node_modules/redux-persist/.*
