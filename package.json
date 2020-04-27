@@ -20,7 +20,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "flow && test --ci",
-      "pre-push": "flow && test --ci && build"
+      "pre-push": "flow && test --ci && yarn build"
     }
   },
   "eslintConfig": {
