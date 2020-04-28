@@ -24,7 +24,7 @@ function App({ fish, dispatch }) {
   }
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
 
       <nav>
         <ul>
@@ -32,16 +32,18 @@ function App({ fish, dispatch }) {
         </ul>
       </nav>
 
-      <Route path="/fish">
-        <List items={fish}
-          type="fish"
-          onFound={markAsFound}
-          selectAll={selectAll}
-          />
-      </Route>
-      <Route path="/">
-        <Redirect to="/fish" />
-      </Route>
+      <Switch>
+        <Route path="/fish">
+          <List items={fish}
+            type="fish"
+            onFound={markAsFound}
+            selectAll={selectAll}
+            />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/fish" />
+        </Route>
+      </Switch>
     </Router>
   );
 }
