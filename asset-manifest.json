@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/animal-crossing-missing-items/static/css/main.c07340b9.chunk.css",
-    "main.js": "/animal-crossing-missing-items/static/js/main.03f12cea.chunk.js",
-    "main.js.map": "/animal-crossing-missing-items/static/js/main.03f12cea.chunk.js.map",
+    "main.css": "/animal-crossing-missing-items/static/css/main.31c93b54.chunk.css",
+    "main.js": "/animal-crossing-missing-items/static/js/main.a84a5c14.chunk.js",
+    "main.js.map": "/animal-crossing-missing-items/static/js/main.a84a5c14.chunk.js.map",
     "runtime-main.js": "/animal-crossing-missing-items/static/js/runtime-main.3a886135.js",
     "runtime-main.js.map": "/animal-crossing-missing-items/static/js/runtime-main.3a886135.js.map",
-    "static/js/2.47f7802f.chunk.js": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js",
-    "static/js/2.47f7802f.chunk.js.map": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js.map",
+    "static/js/2.5bb11b31.chunk.js": "/animal-crossing-missing-items/static/js/2.5bb11b31.chunk.js",
+    "static/js/2.5bb11b31.chunk.js.map": "/animal-crossing-missing-items/static/js/2.5bb11b31.chunk.js.map",
     "index.html": "/animal-crossing-missing-items/index.html",
-    "precache-manifest.03e2e930d1de040e745afc2c3c635d48.js": "/animal-crossing-missing-items/precache-manifest.03e2e930d1de040e745afc2c3c635d48.js",
+    "precache-manifest.087cab4408ebff42ccdebbce99c6b162.js": "/animal-crossing-missing-items/precache-manifest.087cab4408ebff42ccdebbce99c6b162.js",
     "service-worker.js": "/animal-crossing-missing-items/service-worker.js",
-    "static/css/main.c07340b9.chunk.css.map": "/animal-crossing-missing-items/static/css/main.c07340b9.chunk.css.map",
-    "static/js/2.47f7802f.chunk.js.LICENSE.txt": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js.LICENSE.txt"
+    "static/css/main.31c93b54.chunk.css.map": "/animal-crossing-missing-items/static/css/main.31c93b54.chunk.css.map",
+    "static/js/2.5bb11b31.chunk.js.LICENSE.txt": "/animal-crossing-missing-items/static/js/2.5bb11b31.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3a886135.js",
-    "static/js/2.47f7802f.chunk.js",
-    "static/css/main.c07340b9.chunk.css",
-    "static/js/main.03f12cea.chunk.js"
+    "static/js/2.5bb11b31.chunk.js",
+    "static/css/main.31c93b54.chunk.css",
+    "static/js/main.a84a5c14.chunk.js"
   ]
 }
