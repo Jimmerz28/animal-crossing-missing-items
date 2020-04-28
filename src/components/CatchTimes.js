@@ -25,7 +25,7 @@ export default class CatchTimes extends React.Component<Props> {
   render() {
 
     const notFound = this.props.items.filter(item => item.found === false)
-    const totalItems = this.props.items.length;
+    const totalItems = notFound.length;
 
     const shadowSizes = Array.from(missingMapOf(notFound, 'shadowSize'));
     const missingTimes = Array.from(missingMapOf(notFound, 'time'));

@@ -10,7 +10,8 @@ import CatchTimes from "./CatchTimes";
 type Props = {
   items: Array<Item>,
   type: string,
-  onFound: Function
+  onFound: Function,
+  selectAll: Function
 };
 
 const cx = classNames.bind(styles);
@@ -20,8 +21,11 @@ export default class List extends React.Component<Props> {
   // @TODO: Move grid into its own component
   // @TODO: Rehydrate store from localstorage
   foundIt = (event: SyntheticEvent<HTMLButtonElement>) => {
-    // event.currentTarget.classList.toggle(styles['-found']);
     this.props.onFound(event.currentTarget.dataset.itemName, this.props.type);
+  }
+
+  selectAll = () => {
+    this.props.selectAll(this.props.type);
   }
 
   render() {
@@ -55,6 +59,7 @@ export default class List extends React.Component<Props> {
         <ul className={styles.list}>
           {list}
         </ul>
+        <button type="button" onClick={this.selectAll}>Select All</button>
         <p>Completed: {PERCENT.format(percentComplete)}</p>
         <CatchTimes items={this.props.items} />
       </section>

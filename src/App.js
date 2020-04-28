@@ -3,7 +3,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import List from './components/List';
-import { toggleFound } from './Actions';
+import { toggleFound, selectAllItems } from './Actions';
 
 function App({ fish, dispatch }) {
 
@@ -11,11 +11,16 @@ function App({ fish, dispatch }) {
     dispatch(toggleFound(name, type));
   }
 
+  function selectAll(type) {
+    dispatch(selectAllItems(type));
+  }
+
   return (
     <div>
       <List items={fish}
         type="fish"
         onFound={markAsFound}
+        selectAll={selectAll}
         />
     </div>
   );
