@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bce4ee5206ba1689284607ae6a33f06c",
+    "revision": "c8bf677033483cdea9d30a00632c6406",
     "url": "/animal-crossing-missing-items/index.html"
   },
   {
-    "revision": "a9ed67689ef3d398678e",
+    "revision": "97ea074684a42f7cbffc",
     "url": "/animal-crossing-missing-items/static/css/main.31c93b54.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/animal-crossing-missing-items/static/js/2.5bb11b31.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9ed67689ef3d398678e",
-    "url": "/animal-crossing-missing-items/static/js/main.a84a5c14.chunk.js"
+    "revision": "97ea074684a42f7cbffc",
+    "url": "/animal-crossing-missing-items/static/js/main.97ef759d.chunk.js"
   },
   {
     "revision": "b97e3fe6017cad1af4b0",
