@@ -5,6 +5,7 @@ import * as React from 'react';
 import styles from './List.module.css';
 import classNames from 'classnames';
 import { PERCENT } from '../Constants';
+import CatchTimes from "./CatchTimes";
 
 type Props = {
   items: Array<Item>,
@@ -29,7 +30,7 @@ export default class List extends React.Component<Props> {
       return accum  + Number(curr.found);
     }, 0);
 
-    const percentage = (completed / this.props.items.length);
+    const percentComplete = (completed / this.props.items.length);
 
     const list = this.props.items.map(item => {
       const buttonStyles = cx(styles.item, {
@@ -51,10 +52,11 @@ export default class List extends React.Component<Props> {
     return (
       <section>
         <h1 className={styles.header}>{this.props.type}</h1>
-        <p>Completed: {PERCENT.format(percentage)}</p>
         <ul className={styles.list}>
           {list}
         </ul>
+        <p>Completed: {PERCENT.format(percentComplete)}</p>
+        <CatchTimes items={this.props.items} />
       </section>
     )
   }

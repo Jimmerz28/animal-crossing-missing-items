@@ -16,6 +16,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 772px;
+  overflow-x: scroll;
 }
 
 button {
