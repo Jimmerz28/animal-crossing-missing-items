@@ -2,7 +2,7 @@
   "name": "missing-things",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jimmerz28.github.io/ac-missing",
+  "homepage": "https://jimmerz28.github.io/animal-crossing-missing-items",
   "dependencies": {
     "classnames": "^2.2.6",
     "localforage": "^1.7.3",
