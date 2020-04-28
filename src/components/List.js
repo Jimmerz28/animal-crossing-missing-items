@@ -5,7 +5,7 @@ import * as React from 'react';
 import styles from './List.module.css';
 import classNames from 'classnames';
 import { PERCENT } from '../Constants';
-import CatchTimes from "./CatchTimes";
+import MissingStats from "./MissingStats";
 
 type Props = {
   items: Array<Item>,
@@ -18,8 +18,6 @@ const cx = classNames.bind(styles);
 
 export default class List extends React.Component<Props> {
 
-  // @TODO: Move grid into its own component
-  // @TODO: Rehydrate store from localstorage
   foundIt = (event: SyntheticEvent<HTMLButtonElement>) => {
     this.props.onFound(event.currentTarget.dataset.itemName, this.props.type);
   }
@@ -41,6 +39,7 @@ export default class List extends React.Component<Props> {
         [styles['-found']]: item.found
       });
 
+      // @TODO: Wrap in a form and the stats + completed text in an output
       return (
         <li key={item.name}
         title={item.name}>
@@ -55,13 +54,12 @@ export default class List extends React.Component<Props> {
 
     return (
       <section>
-        <h1 className={styles.header}>{this.props.type}</h1>
         <ul className={styles.list}>
           {list}
         </ul>
         <button type="button" onClick={this.selectAll}>Select All</button>
         <p>Completed: {PERCENT.format(percentComplete)}</p>
-        <CatchTimes items={this.props.items} />
+        <MissingStats items={this.props.items} />
       </section>
     )
   }

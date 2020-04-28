@@ -13,3 +13,4 @@ Try to make it a bit easier to keep track of which bugs and fish you need to cat
 ## Acknowledgments
 
 * Inspiration and data from the scraper by [sungyeonu](https://github.com/sungyeonu/animal-crossing-scraper)
+* Fandom's [Animal Crossing Wiki](https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki)
