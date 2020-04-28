@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/animal-crossing-missing-items/precache-manifest.1193aa7a93909d7be8d30768a7637881.js"
+  "/animal-crossing-missing-items/precache-manifest.674ca0cb81fea1121eb135e177e486de.js"
 );
 
 self.addEventListener('message', (event) => {
