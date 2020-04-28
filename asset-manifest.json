@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ac-missing/static/css/main.c07340b9.chunk.css",
-    "main.js": "/ac-missing/static/js/main.da6aaa43.chunk.js",
-    "main.js.map": "/ac-missing/static/js/main.da6aaa43.chunk.js.map",
-    "runtime-main.js": "/ac-missing/static/js/runtime-main.4e740846.js",
-    "runtime-main.js.map": "/ac-missing/static/js/runtime-main.4e740846.js.map",
-    "static/js/2.47f7802f.chunk.js": "/ac-missing/static/js/2.47f7802f.chunk.js",
-    "static/js/2.47f7802f.chunk.js.map": "/ac-missing/static/js/2.47f7802f.chunk.js.map",
-    "index.html": "/ac-missing/index.html",
-    "precache-manifest.6f0ac297ab3745c3ff99dbc4e6f0a3a3.js": "/ac-missing/precache-manifest.6f0ac297ab3745c3ff99dbc4e6f0a3a3.js",
-    "service-worker.js": "/ac-missing/service-worker.js",
-    "static/css/main.c07340b9.chunk.css.map": "/ac-missing/static/css/main.c07340b9.chunk.css.map",
-    "static/js/2.47f7802f.chunk.js.LICENSE.txt": "/ac-missing/static/js/2.47f7802f.chunk.js.LICENSE.txt"
+    "main.css": "/animal-crossing-missing-items/static/css/main.c07340b9.chunk.css",
+    "main.js": "/animal-crossing-missing-items/static/js/main.03f12cea.chunk.js",
+    "main.js.map": "/animal-crossing-missing-items/static/js/main.03f12cea.chunk.js.map",
+    "runtime-main.js": "/animal-crossing-missing-items/static/js/runtime-main.3a886135.js",
+    "runtime-main.js.map": "/animal-crossing-missing-items/static/js/runtime-main.3a886135.js.map",
+    "static/js/2.47f7802f.chunk.js": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js",
+    "static/js/2.47f7802f.chunk.js.map": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js.map",
+    "index.html": "/animal-crossing-missing-items/index.html",
+    "precache-manifest.03e2e930d1de040e745afc2c3c635d48.js": "/animal-crossing-missing-items/precache-manifest.03e2e930d1de040e745afc2c3c635d48.js",
+    "service-worker.js": "/animal-crossing-missing-items/service-worker.js",
+    "static/css/main.c07340b9.chunk.css.map": "/animal-crossing-missing-items/static/css/main.c07340b9.chunk.css.map",
+    "static/js/2.47f7802f.chunk.js.LICENSE.txt": "/animal-crossing-missing-items/static/js/2.47f7802f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e740846.js",
+    "static/js/runtime-main.3a886135.js",
     "static/js/2.47f7802f.chunk.js",
     "static/css/main.c07340b9.chunk.css",
-    "static/js/main.da6aaa43.chunk.js"
+    "static/js/main.03f12cea.chunk.js"
   ]
 }
