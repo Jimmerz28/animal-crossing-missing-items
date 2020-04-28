@@ -1,5 +1,7 @@
 .item {
   opacity: .35;
+  background: none;
+  border: none;
 }
 
 .item > span {
@@ -17,13 +19,4 @@
   flex-wrap: wrap;
   height: 772px;
   overflow-x: scroll;
-}
-
-button {
-  background: none;
-  border: none;
-}
-
-.header {
-  text-transform: capitalize;
 }

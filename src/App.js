@@ -2,8 +2,16 @@
 
 import React from 'react';
 import { connect } from "react-redux";
+import {
+  Link,
+  Route,
+  BrowserRouter as Router,
+  Switch,
+  Redirect
+} from "react-router-dom";
+
+import { selectAllItems, toggleFound } from './Actions';
 import List from './components/List';
-import { toggleFound, selectAllItems } from './Actions';
 
 function App({ fish, dispatch }) {
 
@@ -16,13 +24,25 @@ function App({ fish, dispatch }) {
   }
 
   return (
-    <div>
-      <List items={fish}
-        type="fish"
-        onFound={markAsFound}
-        selectAll={selectAll}
-        />
-    </div>
+    <Router>
+
+      <nav>
+        <ul>
+          <li><Link to="/fish">Fish</Link></li>
+        </ul>
+      </nav>
+
+      <Route path="/fish">
+        <List items={fish}
+          type="fish"
+          onFound={markAsFound}
+          selectAll={selectAll}
+          />
+      </Route>
+      <Route path="/">
+        <Redirect to="/fish" />
+      </Route>
+    </Router>
   );
 }
 
